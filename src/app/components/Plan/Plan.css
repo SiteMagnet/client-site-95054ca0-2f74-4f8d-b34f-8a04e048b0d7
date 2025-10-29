@@ -1,0 +1,164 @@
+/* Plan Section */
+.plan-section {
+  background-color: #f5f5f5;
+  padding: 5rem 2rem;
+  text-align: center;
+}
+
+.plan-content {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+h1 {
+  font-size: 3rem;
+  font-weight: 600;
+  color: #333;
+  margin-bottom: 1.5rem;
+}
+
+.summary-text {
+  font-size: 1.125rem;
+  font-weight: 300;
+  color: #555;
+  margin-bottom: 2rem;
+}
+
+/* Steps Layout (2-row structure) */
+.steps-container {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  margin-bottom: 3rem;
+}
+
+.steps-row {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+
+/* Individual Step Card */
+.step {
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  padding: 2rem;
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  flex: 1 1 250px;
+  max-width: 300px;
+}
+
+.step:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+.step-icon {
+  font-size: 3rem;
+  color: #007bff;
+  margin-bottom: 1rem;
+}
+
+.step h3 {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #333;
+  margin-bottom: 0.5rem;
+}
+
+.step p {
+  font-size: 1rem;
+  color: #666;
+}
+
+/* Call to Action Button */
+.cta-button {
+  margin-top: 3rem;
+}
+
+.cta-button button {
+  background-color: #007bff;
+  color: #fff;
+  font-size: 1.25rem;
+  font-weight: 600;
+  padding: 1rem 2.5rem;
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.cta-button button:hover {
+  background-color: #0056b3;
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+  h1 {
+    font-size: 2.5rem;
+  }
+
+  .summary-text {
+    font-size: 1rem;
+  }
+
+  .step h3 {
+    font-size: 1.25rem;
+  }
+
+  .step p {
+    font-size: 0.95rem;
+  }
+
+  .cta-button button {
+    font-size: 1.1rem;
+    padding: 0.8rem 2rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .plan-section {
+    padding: 4rem 1rem;
+  }
+
+  h1 {
+    font-size: 2rem;
+  }
+
+  .summary-text {
+    font-size: 0.9rem;
+  }
+
+  .steps-row {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .cta-button button {
+    font-size: 1rem;
+    padding: 1rem 2rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .step {
+    padding: 1.5rem;
+  }
+
+  .step-icon {
+    font-size: 2.5rem;
+  }
+
+  .step h3 {
+    font-size: 1.2rem;
+  }
+
+  .cta-button button {
+    font-size: 0.95rem;
+    padding: 0.8rem 1.8rem;
+  }
+}

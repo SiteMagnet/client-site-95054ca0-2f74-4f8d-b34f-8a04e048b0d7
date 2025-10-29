@@ -1,0 +1,63 @@
+.personal-story {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 60px 20px;
+    background-color: rgba(255, 255, 255, 0.8); /* Optional: Transparent background */
+  }
+  .right-side{margin-left: 160px;}
+
+  .left-side, .right-side {
+    width: 48%; /* Each side takes up 48% of the container */
+  }
+
+  .main-heading {
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+  }
+
+  .sub-heading {
+    font-size: 1.125rem;
+    line-height: 1.6;
+    margin-bottom: 20px;
+  }
+
+  .highlight {
+    font-weight: bold;
+    color: #007bff; /* Highlighted text color */
+  }
+
+  /* Mobile responsive adjustments */
+  @media (max-width: 768px) {
+    .personal-story {
+      flex-direction: column; /* Stack the content on top of each other */
+      padding: 40px 15px;
+    }
+
+    .left-side, .right-side {
+      width: 100%; /* Make both sides full-width */
+      margin-bottom: 20px; /* Space between sections */
+    }
+  .right-side{
+    margin-left: 0px;
+  }
+    .main-heading {
+      font-size: 1.8rem; /* Adjust heading size for smaller screens */
+    }
+
+    .sub-heading {
+      font-size: 1rem; /* Adjust text size for smaller screens */
+    }
+  }
+
+  /* Desktop-specific adjustments */
+  @media (min-width: 1024px) {
+    .main-heading {
+      font-size: 2.75rem; /* Adjust heading size for larger screens */
+    }
+
+    .sub-heading {
+      font-size: 1.125rem;
+    }
+  }

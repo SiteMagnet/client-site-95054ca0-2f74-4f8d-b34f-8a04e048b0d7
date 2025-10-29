@@ -1,0 +1,61 @@
+/* Container */
+.analytics-tab {
+    padding: 24px;
+    font-family: system-ui, sans-serif;
+    background-color: #f9fafb;
+    color: #111827;
+  }
+
+  /* Header */
+  .analytics-tab h2 {
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin-bottom: 8px;
+  }
+
+  .analytics-tab p.subtext {
+    color: #6b7280;
+    margin-bottom: 24px;
+  }
+
+  /* Card */
+  .analytics-card {
+    background-color: #ffffff;
+    border-radius: 1rem;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+    padding: 24px;
+    margin-bottom: 24px;
+  }
+
+  /* Chart Container */
+  .analytics-chart {
+    height: 256px; /* Same as Tailwind's h-64 */
+    width: 100%;
+  }
+
+  /* Stat Grid */
+  .analytics-stats {
+    display: grid;
+    gap: 16px;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  }
+
+  /* Stat Card */
+  .analytics-stat {
+    background-color: #ffffff;
+    padding: 16px;
+    border-radius: 0.75rem;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.03);
+  }
+
+  /* Stat Text */
+  .analytics-stat .label {
+    font-size: 0.875rem;
+    color: #6b7280;
+    margin-bottom: 4px;
+  }
+
+  .analytics-stat .value {
+    font-size: 1.5rem;
+    font-weight: 700;
+  }
