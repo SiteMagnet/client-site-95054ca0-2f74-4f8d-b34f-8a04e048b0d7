@@ -1,34 +1,35 @@
 {
-    "hero": {
-      "hero_heading": "Unlock Your Business's Full Potential",
-      "hero_subheading": "Stop wasting time and money on ineffective marketing strategies",
-      "call_to_action": "Get Started"
-    },
-    "key_problem": [
-      "Feel the weight of ineffective marketing",
-      "It's time for a change with Sitemagnet",
-      "As a business owner, you shouldn't have to struggle to market your services. Sitemagnet understands the frustration of wasted time and money on ads that don’t deliver results. You deserve financial freedom and flexibility. Let us help you unlock your business's full potential and attract leads effortlessly. Say goodbye to ineffective strategies and hello to growth with Sitemagnet."
-    ],
-    "personalStory": [
-      "I started sitemagnet to break free from the struggle of relying solely on word-of-mouth marketing.",
-      "But soon, I was spending more time and money on ads, feeling lost in a sea of competition.",
-      "It wasn't until I embraced the power of aligning my message with my website that everything shifted.",
-      "Suddenly, I went from chasing leads to attracting my ideal clients effortlessly.",
-      "With my passion for helping business owners thrive, I know the key to financial freedom lies in a website that works for you."
-    ],
-    "SEO": {
-      "title": "Unlock Your Business's Full Potential | Sitemagnet",
-      "description": "Stop wasting time and money on ineffective marketing strategies. Get financial freedom and growth with Sitemagnet.",
-      "robots": "index, follow",
-      "openGraph": {
-        "title": "Unlock Your Business's Full Potential | Sitemagnet",
-        "description": "Stop wasting time and money on ineffective marketing strategies. Get financial freedom and growth with Sitemagnet."
-      }
-    },
-    "selected_template": "custom",
-    "logo_url": "",
-    "wants_logo_help": "",
-    "inspiration_link": "hrhjerhje",
-    "notes": "uiefunrei",
-    "color": "#FF5733"
-  }
+  "hero": {
+    "hero_heading": "Escape the Struggles of k,kjlkn",
+    "hero_subheading": "Discover a Solution that Understands Your j jknkj",
+    "call_to_action": "Get Started",
+    "brand_name": "mm,m,"
+  },
+  "key_problem": [
+    "Escape the Struggles of k,kjlkn",
+    "Discover a Solution that Understands Your j jknkj",
+    "Feeling overwhelmed by the challenges of k,kjlkn and struggling with j jknkj? Let mm,m, be your guiding light. Our proven jknknk plan will help you conquer your obstacles, achieve positive outcomes, and avoid failure. With our empathy and authority, we'll support you every step of the way."
+  ],
+  "personalStory": [
+    "I started my business to escape the 9-5 grind, only to struggle finding clients and feeling lost.",
+    "I wondered what I was doing wrong while others succeeded effortlessly.",
+    "But when I honed my messaging and aligned it with my website, everything changed.",
+    "In weeks, I went from chasing clients to attracting my first $3,000 client.",
+    "With my sales background, I create websites that not only look good but convert visitors into customers."
+  ],
+  "SEO": {
+    "title": "Escape Struggles & Discover Solutions | mm,m,",
+    "description": "Conquer your obstacles, achieve positive outcomes, and avoid failure with mm,m,'s proven jknknk plan. Let us be your guiding light.",
+    "robots": "index, follow",
+    "openGraph": {
+      "title": "Escape Struggles & Discover Solutions | mm,m,",
+      "description": "Conquer your obstacles, achieve positive outcomes, and avoid failure with mm,m,'s proven jknknk plan. Let us be your guiding light."
+    }
+  },
+  "selected_template": "modern",
+  "logo_url": "",
+  "wants_logo_help": true,
+  "inspiration_link": "d,d,d,d",
+  "notes": "d,d,dd,",
+  "color": "#3498db"
+}
