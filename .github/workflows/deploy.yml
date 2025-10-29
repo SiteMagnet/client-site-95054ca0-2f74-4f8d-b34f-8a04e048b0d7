@@ -1,0 +1,36 @@
+name: Deploy client-site-95054ca0-2f74-4f8d-b34f-8a04e048b0d7
+
+on:
+  push:
+    branches:
+      - main
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - name: Install App Dependencies
+        run: |
+          npm install
+      - name: Install Render CLI and Deploy
+        run: |
+          MAX_RETRIES=5
+          COUNT=0
+          SUCCESS=0
+          while [ $COUNT -lt $MAX_RETRIES ]; do
+            echo "Attempt $((COUNT+1)) to install Render CLI and deploy..."
+            curl -fsSL https://cdn.render.com/cli/latest/install.sh | bash
+            export PATH="$HOME/.render/bin:$PATH"
+            render deploy --service client-site-95054ca0-2f74-4f8d-b34f-8a04e048b0d7 && SUCCESS=1 && break
+            COUNT=$((COUNT+1))
+            echo "Failed, retrying in 10s..."
+            sleep 10
+          done
+          if [ $SUCCESS -eq 0 ]; then
+            echo "❌ Render CLI deploy failed after $MAX_RETRIES attempts."
+            exit 1
+          else
+            echo "✅ Render CLI deploy succeeded!"
+          fi
+        env:
+          RENDER_API_KEY: ${{ secrets.RENDER_API_KEY }}
