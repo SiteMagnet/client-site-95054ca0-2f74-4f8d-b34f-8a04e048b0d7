@@ -1,0 +1,221 @@
+/* Layout: left - center - right */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 40px;
+    background-color: white;
+    color: #000;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    flex-wrap: wrap;
+  }
+
+  /* Left side with the brand */
+  .navbar-left {
+    display: flex;
+    justify-content: flex-start;
+    flex: 1;
+    padding-right: 20px;
+  }
+
+  /* Adjust navbar-center to move links left a bit */
+  .navbar-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex: 2;
+    padding-right: 30px;
+    padding-left: 20px; /* Adjust this to move links slightly left */
+  }
+
+  .navbar-center ul {
+    display: flex;
+    gap: 30px;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+
+  /* Brand (SiteMagnet logo) */
+  .brand {
+    font-size: 24px;
+    font-weight: bold;
+    color: #000;
+    text-transform: uppercase;
+    text-decoration: none;
+    margin: 0;
+    padding: 0;
+  }
+
+  /* Fix Get Started button */
+  .get-started-btn {
+    padding: 12px 40px;
+    background-color: #3498db;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    white-space: nowrap;
+  }
+
+  .get-started-btn:hover {
+    background-color: #2980b9;
+  }
+
+  /* Hamburger Icon */
+  .hamburger {
+    display: none; /* Hidden on desktop by default */
+    flex-direction: column;
+    gap: 6px;
+    cursor: pointer;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+  }
+
+  .line {
+    width: 30px;
+    height: 3px;
+    background-color: #000;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+  }
+
+  /* Open state of hamburger */
+  .line.open {
+    transform: rotate(45deg);
+  }
+
+  .line:nth-child(2).open {
+    opacity: 0;
+  }
+
+  .line.close {
+    transform: rotate(-45deg);
+  }
+
+  /* Responsive layout for mobile */
+  @media (max-width: 768px) {
+    .navbar {
+      flex-direction: column;
+      justify-content: flex-start;
+      align-items: flex-start;
+      padding: 20px;
+    }
+
+    /* Align the hamburger on the right and logo on the left */
+    .navbar-left {
+      display: flex;
+      justify-content: flex-start;
+      flex: 1;
+      width: 100%;
+      margin-bottom: 10px;
+    }
+
+    /* Stack the links below the logo */
+    .navbar-center {
+      display: none;
+      width: 100%;
+    }
+
+    .navbar-center.open {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 15px;
+      margin-top: 10px;
+      padding-left: 20px; /* Align links under the logo */
+    }
+
+    .navbar-center ul {
+      flex-direction: column;
+      gap: 15px;
+      width: 100%;
+    }
+
+    /* Hide the Get Started button until the hamburger menu is open */
+    .navbar-right {
+      display: none;
+    }
+
+    .get-started-btn {
+      width: 100%;
+    }
+
+    /* Show hamburger menu on mobile */
+    .hamburger {
+      display: flex;
+      flex-direction: column;
+      gap: 6px;
+      align-items: center;
+    }
+
+    /* Show the right section (Get Started and Links) when menu is open */
+    .navbar-center.open,
+    .navbar-right.open {
+      display: flex;
+    }
+
+    /* Show the - sign (close) when the menu is open */
+    .hamburger.open .line:nth-child(1) {
+      transform: rotate(45deg);
+    }
+
+    .hamburger.open .line:nth-child(2) {
+      opacity: 0;
+    }
+
+    .hamburger.open .line:nth-child(3) {
+      transform: rotate(-45deg);
+    }
+  }
+
+  /* Desktop version of the navbar */
+  @media (min-width: 769px) {
+    /* Right-center the navbar-center section */
+    .navbar-center {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex: 2; /* This will center the links right between the logo and button */
+      padding-left: 20px; /* This is the key change to move links left a bit */
+    }
+
+    .navbar-center ul {
+      flex-direction: row;
+      gap: 30px;
+      margin: 0;
+      padding: 0;
+      position: relative;
+      right: 200px;
+    }
+
+    /* Always show Get Started button */
+    .navbar-right {
+      display: flex;
+      align-items: center;
+    }
+
+    /* Hide hamburger menu on desktop */
+    .hamburger {
+      display: none;
+    }
+  }
+
+  /* Additional enhancements for active links */
+  .navbar-center ul li a.active {
+    color: #3498db;
+    font-weight: bold;
+    text-decoration: underline;
+  }
+
+  /* Smooth transition for navbar links and hamburger */
+  .navbar-center ul li a,
+  .hamburger .line {
+    transition: all 0.3s ease;
+  }

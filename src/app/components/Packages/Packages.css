@@ -1,0 +1,332 @@
+.packages {
+  padding: 50px 20px;
+  background-color: #f4f4f4;
+  text-align: center;
+}
+
+.packages-heading {
+  font-size: 32px;
+  font-weight: bold;
+  margin-bottom: 15px;
+  color: #333;
+}
+.book-call-link{
+  margin-left: 120px;
+}
+.book-call-link:hover{
+  cursor: pointer;
+}
+.package-tagline {
+  font-style: italic;
+  font-size: 14px;
+  color: #555;
+  margin: 10px 0 20px;
+}
+
+.packages-description {
+  font-size: 16px;
+  margin-bottom: 30px;
+  color: #333;
+}
+
+.feature-text {
+  color: #333;
+}
+
+.packages-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+  justify-items: center;
+  margin-top: 30px;
+}
+
+.package-card {
+  background-color: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 350px;
+  transition: all 0.3s ease;
+  position: relative;
+}
+
+.package-card.middle-card {
+  background-color: #f5deb3;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+  transform: scale(1.05);
+}
+
+.package-number {
+  position: absolute;
+  top: 15px;
+  left: 15px;
+  font-size: 16px;
+  font-weight: bold;
+  color: #333;
+}
+
+.feature-icon {
+  color: #3498db;
+}
+
+.package-price {
+  font-size: 18px;
+  font-weight: bold;
+  color: #333;
+  margin-top: 10px;
+  display: block;
+}
+
+.package-heading {
+  font-size: 22px;
+  font-weight: normal;
+  margin-top: 10px;
+  color: #333;
+}
+
+.package-features {
+  list-style: none;
+  padding: 0;
+  margin: 20px 0;
+  color: #333;
+}
+
+.package-features li {
+  font-size: 15px;
+  margin: 8px 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.Space {
+  margin-left: 8px;
+}
+
+.cta-button {
+  background-color: #3498db;
+  color: white;
+  padding: 12px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  width: 100%;
+  font-size: 16px;
+  margin-top: 15px;
+}
+
+.book-call-link {
+  display: block;
+  text-align: center;
+  margin-top: 8px;
+  font-size: 14px;
+  color: #3498db;
+  text-decoration: none;
+}
+
+.compare-button-wrapper {
+  text-align: center;
+  margin-top: 40px;
+}
+
+.compare-button {
+  padding: 12px 24px;
+  background-color: #111;
+  color: #fff;
+  border: none;
+  font-size: 1rem;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.compare-button:hover {
+  background-color: #333;
+}
+
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.6);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+
+}
+
+.modal-content {
+  background: #fff;
+  padding: 30px;
+  border-radius: 12px;
+  max-width: 800px;
+  width: 95%;
+  position: relative;
+  box-shadow: 0 0 20px rgba(0,0,0,0.3);
+  overflow-x: auto;
+  color: #333;
+
+}
+.modal-content{
+background-color: transparent;
+box-shadow: none;
+}
+.close-modal {
+  position: absolute;
+  top: 12px;
+  right: 16px;
+  font-size: 1.8rem;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.comparison-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+.comparison-table th,
+.comparison-table td {
+  border: 1px solid #ddd;
+  padding: 14px;
+  text-align: left;
+  background-color: #ddd;
+
+}
+
+.comparison-table th {
+  background-color: #f7f7f7;
+}
+
+
+/* Mobile-specific styles */
+@media screen and (max-width: 768px) {
+  .packages {
+    padding: 40px 15px;
+  }
+
+  .packages-heading {
+    font-size: 24px;
+  }
+
+  .package-tagline {
+    font-size: 13px;
+  }
+
+  .packages-description {
+    font-size: 14px;
+    margin-bottom: 25px;
+  }
+
+  .packages-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .package-card {
+    padding: 18px;
+    margin: 0 auto;
+  }
+
+  .package-number {
+    font-size: 14px;
+    top: 10px;
+    left: 10px;
+  }
+
+  .package-price {
+    font-size: 16px;
+  }
+
+  .package-heading {
+    font-size: 20px;
+  }
+
+  .package-features li {
+    font-size: 14px;
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .cta-button {
+    font-size: 14px;
+    padding: 10px;
+  }
+
+  .book-call-link {
+    font-size: 13px;
+  }
+
+  .modal-content {
+    padding: 20px;
+    width: 95%;
+  }
+
+  .comparison-table th,
+  .comparison-table td {
+    font-size: 13px;
+    padding: 10px;
+
+  }
+
+  .compare-button {
+    font-size: 0.9rem;
+    padding: 10px 18px;
+  }
+
+  .close-modal {
+    font-size: 1.5rem;
+  }
+  /* Make modal scrollable and responsive */
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0,0,0,0.6);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+  padding: 15px; /* give some breathing room on mobile */
+  overflow-y: auto; /* enable vertical scrolling */
+}
+
+.modal-content {
+  background: #fff;
+  padding: 20px;
+  border-radius: 12px;
+  max-width: 800px;
+  width: 100%;
+  max-height: 90vh; /* limit height */
+  overflow-y: auto; /* scroll if content overflows */
+  position: relative;
+  box-shadow: 0 0 20px rgba(0,0,0,0.3);
+}
+
+/* Close button always visible */
+.close-modal {
+  position: absolute;
+  top: 10px;
+  right: 14px;
+  font-size: 1.5rem;
+  background: none;
+  border: none;
+  color: #333;
+  z-index: 10;
+  cursor: pointer;
+}
+
+/* Optional: prevent background scroll when modal is open */
+body.modal-open {
+  overflow: hidden;
+}
+
+}

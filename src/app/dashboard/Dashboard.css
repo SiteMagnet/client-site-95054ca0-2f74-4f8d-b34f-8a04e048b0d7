@@ -1,0 +1,123 @@
+.sidebar-logo{
+  font-size: 22px;
+  margin-left: 10px;
+}/* Sidebar container */
+.sidebar {
+  width: 250px;
+  background-color: #1f2937;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  transition: transform 0.3s ease;
+  z-index: 100; /* Ensure it's above main content */
+}
+
+/* Sidebar toggle button (hidden on desktop by default) */
+.sidebar-toggle {
+  display: none; /* Default: hidden */
+}
+
+@media (max-width: 768px) {
+  .sidebar {
+    transform: translateX(-100%);
+  }
+
+  .sidebar.open {
+    transform: translateX(0);
+  }
+
+  .sidebar-toggle {
+    display: block;
+    position: fixed; /* fixed is better than absolute here */
+    top: 500px;
+    left: 280px;
+    background-color: #3b82f6;
+    color: white;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    z-index: 999; /* sits above everything */
+
+  }
+}
+
+/* Dashboard layout */
+.dashboard {
+  display: flex;
+  margin-left: 250px;
+  height: 100vh;
+  overflow: hidden;
+}
+
+@media (max-width: 768px) {
+  .dashboard {
+    margin-left: 0;
+    flex-direction: column;
+  }
+}
+
+/* Main content area */
+.dashboard-content {
+  flex-grow: 1;
+  padding: 24px;
+  background-color: #f9fafb;
+  overflow-y: auto;
+  height: 100vh;
+  box-sizing: border-box;
+}
+
+/* Sidebar list styling */
+.sidebar-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  position: relative;
+  top: 20px;
+}
+
+.sidebar-list li {
+  margin-bottom: 10px;
+}
+
+.sidebar-list button {
+  width: 100%;
+  background-color: transparent;
+  color: white;
+  font-size: 1rem;
+  padding: 15px;
+  text-align: left;
+  border: none;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  border-radius: 5px;
+}
+
+.sidebar-list button.active {
+  background-color: #3b82f6;
+  color: #fff;
+}
+
+.sidebar-list button:hover {
+  background-color: #4b5563;
+  color: #fff;
+}
+@media (max-width: 768px) {
+  .sidebar-toggle {
+    top: auto; /* Reset the top value */
+    bottom: 20px; /* Position it at the bottom */
+    left: 20px; /* Position it on the left */
+    right: auto; /* Make sure it's not positioned on the right */
+  }
+}
+
+@media (max-width: 480px) {
+  .sidebar-toggle {
+    padding: 10px 12px; /* Adjust padding for smaller screens */
+    font-size: 14px; /* Adjust font size for better visibility */
+  }
+}

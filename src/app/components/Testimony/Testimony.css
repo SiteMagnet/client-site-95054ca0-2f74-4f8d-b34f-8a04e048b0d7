@@ -1,0 +1,81 @@
+/* Testimony Section Styles */
+.testimonial-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50vh;
+    background-color: #f8f8f8;
+    padding: 2rem;
+    text-align: center;
+  }
+
+  .testimonial-content {
+    max-width: 60%;
+    padding: 1rem;
+  }
+
+  /* Quote Icon */
+  .quote-icon {
+    font-size: 3rem;
+    color: #333;
+    margin-bottom: 1rem;
+  }
+
+  /* Testimonial Text */
+  .testimonial-text {
+    font-size: 1.5rem;
+    font-weight: 300;
+    color: #444;
+    margin-bottom: 1rem;
+  }
+
+  /* Testimonial Name */
+  .testimonial-name {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #666;
+  }
+
+  /* Responsive Design */
+  @media (max-width: 1024px) {
+    .testimonial-content {
+      max-width: 80%;
+    }
+
+    .testimonial-text {
+      font-size: 1.3rem;
+    }
+
+    .quote-icon {
+      font-size: 2.5rem;
+    }
+  }
+
+  @media (max-width: 768px) {
+    .testimonial-section {
+      height: auto;
+      padding: 3rem 1rem;
+    }
+
+    .testimonial-content {
+      max-width: 90%;
+    }
+
+    .testimonial-text {
+      font-size: 1.2rem;
+    }
+
+    .quote-icon {
+      font-size: 2rem;
+    }
+  }
+
+  @media (max-width: 480px) {
+    .testimonial-text {
+      font-size: 1rem;
+    }
+
+    .testimonial-name {
+      font-size: 1rem;
+    }
+  }
