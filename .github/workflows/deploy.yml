@@ -28,7 +28,7 @@ jobs:
           while [ $COUNT -lt $MAX_RETRIES ]; do
             echo "Attempt $((COUNT+1)) to trigger Render API deployment..."
 
-            RESPONSE=$(curl -s -X POST "https://api.render.com/v1/services/\${{ secrets.SERVICEID }}/deploys"               -H "Authorization: Bearer \${{ secrets.RENDER_API_KEY }}"               -H "Content-Type: application/json"               -d '{}')
+            RESPONSE=$(curl -s -X POST "https://api.render.com/v1/services/${{ secrets.SERVICEID }}/deploys"               -H "Authorization: Bearer ${{ secrets.RENDER_API_KEY }}"               -H "Content-Type: application/json"               -d '{}')
 
             echo "Render Response: $RESPONSE"
 
