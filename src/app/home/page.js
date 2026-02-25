@@ -5,12 +5,12 @@ import PastClients from "../components/PastClients";
 import KeyProblem from "../components/KeyProblem";
 import Testimony from "../components/Testimony";
 import Plan from "../components/Plan";
-import ClientShowcase from "../components/ClientShowCase";
+// import ClientShowcase from "../components/ClientShowCase";
 // import Packages from "../components/Packages";
 import PersonalStory from "../components/PersonalStory";
 import FAQ from "../components/FAQ";
 import Reassurance from "../components/Reassurance";
-import ContentProvider from "../components/ContentProvider";
+// import ContentProvider from "../components/ContentProvider";
 import Questionaire from "../components/Questionaire";
 
 export default async function Home() {
@@ -27,7 +27,7 @@ export default async function Home() {
       <Testimony content={content} />
       <Plan content={content.plan} />
 
-      <ClientShowcase />
+      {/* <ClientShowcase /> */}
       {/* <Packages content={content} /> */}
       <PersonalStory content={content} />
       <FAQ/>

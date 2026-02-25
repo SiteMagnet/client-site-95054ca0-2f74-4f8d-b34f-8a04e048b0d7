@@ -1,52 +1,53 @@
-'use client'; // This tells Next.js to render this component client-side only
+'use client';
 
 import React from 'react';
-import { FaCheckCircle } from 'react-icons/fa'; // Importing a checkmark icon from react-icons
+import { FaCheckCircle } from 'react-icons/fa';
 import './Reassurance.css';
 
 export default function Reassurance() {
   return (
     <section className="reassurance-section">
       <div className="left-side">
-        <h2 className="heading">Is This For Me?</h2>
+        <h2 className="heading">Is This You?</h2>
         <div className="card-container">
           <div className="card">
             <p>
-              <FaCheckCircle /> Struggling to find clients who value your work?
+              <FaCheckCircle /> Worried about how your family would manage financially without you?
             </p>
             <p>
-              <FaCheckCircle /> Your website isn’t converting visitors into paying clients?
+              <FaCheckCircle /> Concerned about leaving behind unpaid debts or a mortgage?
             </p>
             <p>
-              <FaCheckCircle /> Want to escape the 9-5 but don’t know where to start?
+              <FaCheckCircle /> Unsure if your current coverage is enough to truly protect your loved ones?
             </p>
             <p>
-              <FaCheckCircle /> Overwhelmed by choosing the right website design?
+              <FaCheckCircle /> Want to make sure your children’s future is secure no matter what happens?
             </p>
             <p>
-              <FaCheckCircle /> Putting in work but not seeing the growth you deserve?
+              <FaCheckCircle /> Putting off life insurance because you're not sure where to start?
             </p>
           </div>
         </div>
       </div>
+
       <div className="right-side">
-        <h2 className="heading">Now, Imagine If You Could...</h2>
+        <h2 className="heading">Now Imagine If You Could...</h2>
         <div className="card-container">
           <div className="card">
             <p>
-              <FaCheckCircle /> Attract your first $3,000 client within weeks.
+              <FaCheckCircle /> Know your family is financially protected and secure.
             </p>
             <p>
-              <FaCheckCircle /> Turn your website into a lead-generating machine.
+              <FaCheckCircle /> Ensure your mortgage, debts, and final expenses are fully covered.
             </p>
             <p>
-              <FaCheckCircle /> Build a trusted brand that makes clients excited to invest in you.
+              <FaCheckCircle /> Provide income replacement so your loved ones can maintain their lifestyle.
             </p>
             <p>
-              <FaCheckCircle /> Gain clarity on your messaging and marketing strategies.
+              <FaCheckCircle /> Leave behind a legacy instead of financial stress.
             </p>
             <p>
-              <FaCheckCircle /> Escape the 9-5 grind and build the life you deserve.
+              <FaCheckCircle /> Gain peace of mind knowing you’ve made a responsible financial decision.
             </p>
           </div>
         </div>

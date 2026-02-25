@@ -25,11 +25,11 @@ const hero = content.hero;
           {hero.hero_subheading}
         </p>
         <div className="cta-container">
-        {/* <Link href="/Login"> */}
+        <a href="#questionnaire" >
           <button className="cta-button" >
             Get Started
           </button>
-        {/* </Link> */}
+        </a>
 
         </div>
       </div>

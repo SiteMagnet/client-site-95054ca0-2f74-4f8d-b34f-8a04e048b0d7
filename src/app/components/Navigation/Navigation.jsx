@@ -29,9 +29,9 @@ export default function Navigation({name}) {
       </div>
 
       <div className={`navbar-right ${isMenuOpen ? 'open' : ''}`}>
-        {/* <Link href="/Login"> */}
+      <a href="#questionnaire" >
           <button className="get-started-btn">Get Started</button>
-        {/* </Link> */}
+        </a>
       </div>
 
       {/* Hamburger Icon */}
